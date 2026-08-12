@@ -27,3 +27,14 @@ variable "public_subnet_2_cidr" {
   type        = string
   default     = "10.0.2.0/24"
 }
+
+variable "allowed_cidr" {
+  description = "CIDR allowed to access the web servers"
+  type        = string
+  default     = "0.0.0.0/0"
+}
+
+variable "key_name" {
+  description = "EC2 key pair name"
+  type        = string
+}
