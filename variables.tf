@@ -29,7 +29,7 @@ variable "public_subnet_2_cidr" {
 }
 
 variable "allowed_cidr" {
-  description = "CIDR allowed to access the web servers"
+  description = "CIDR allowed for direct access to web servers during testing"
   type        = string
   default     = "0.0.0.0/0"
 }
